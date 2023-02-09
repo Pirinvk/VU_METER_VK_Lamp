@@ -97,7 +97,7 @@ void setup() {
   pinMode(BUTTON_GPIO, INPUT);
   
   FastLED.addLeds<NEOPIXEL, LED_PIN>(leds, NUM_LEDS);
-  FastLED.setBrightness(200);
+  FastLED.setBrightness(220);
 
   //Turn off all LEDs
   lightOff();
@@ -147,17 +147,17 @@ void loop() {
   5: light off
   6: red
   7: blue
-  8: 
+  8: whithe
   9: green
   */
 
   switch (selectedMode) {
     case 0: 
       FastLED.setBrightness(255);
-      lightOn(255, 250, 250);
+      lightOn(255, 255, 255);
       break;
       case 1: 
-      lightOn(200, 0, 255); //Good source: http://planetpixelemporium.com/tutorialpages/light.html
+      lightOn(255, 0, 255); //Good source: http://planetpixelemporium.com/tutorialpages/light.html
       break;
       case 2: 
       rainbowCycle(30);
