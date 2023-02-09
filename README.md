@@ -1,4 +1,3 @@
-# VU_METER_VK
- ON MEGA
+
 # LAMP VU
 Uno/Nano
