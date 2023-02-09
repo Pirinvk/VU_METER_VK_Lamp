@@ -2,12 +2,12 @@
 #include <FastLED.h>
 #include <EEPROM.h>
 #define PIN 11
-#define N_PIXELS  60
+#define N_PIXELS  30
 #define BG 0
 #define COLOR_ORDER GRB  // Try mixing up the letters (RGB, GBR, BRG, etc) for a whole new world of color combinations
 #define BRIGHTNESS 255   // 0-255, higher number is brighter.
 #define LED_TYPE WS2812B
-#define MIC_PIN   A0  // Microphone is attached to this analog pin
+#define MIC_PIN   A2  // Microphone is attached to this analog pin
 #define DC_OFFSET  0  // DC offset in mic signal - if unusure, leave 0
 #define NOISE     10  // Noise/hum/interference in mic signal
 #define SAMPLES   60  // Length of buffer for dynamic level adjustment
@@ -19,7 +19,7 @@
 #define NUM_BALLS         3                  // Number of bouncing balls you want (recommend < 7, but 20 is fun in its own way)
 #define SPEED .20       // Amount to increment RGB color by each cycle
 
-int brightnessPin = A2, potPin = A1;
+int brightnessPin = A0, potPin = A1;
 
 
 //config for balls
@@ -93,7 +93,7 @@ int          myhue =   0;
 
 
 // constants used here to set pin numbers:
-const int buttonPin = 3;     // the number of the pushbutton pin
+const int buttonPin = 5;     // the number of the pushbutton pin
 
 // Variables will change:
 
