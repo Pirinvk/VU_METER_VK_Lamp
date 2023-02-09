@@ -17,7 +17,7 @@
 #define ANALOG_READ A2
 
 //Confirmed microphone low value, and max value
-#define MIC_LOW 10.0
+#define MIC_LOW 5.0
 #define MIC_HIGH 1023.0
 /** Other macros */
 //How many previous sensor values effects the operating average?
